@@ -143,6 +143,10 @@ body {
     border-radius: 12px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
     text-align: center;
+    width: 300px;
+    height: 290px;
+    object-fit: contain;
+    border-radius: 6px;
 }
 
 .fotoModal::backdrop {
@@ -157,17 +161,7 @@ body {
     line-height: 1.5;
 }
 
-.fotoModal .CapaLivro {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 55vh;
-    margin: 0 auto;
-    object-fit: contain;
-    border-radius: 6px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-}
+
 
 .fotoModal button {
     margin-top: 22px;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca do Caça-Rato | Emprestimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1>Biblioteca do Caça-Rato</h1>
+        <img src="Assets/LogoCaçaRato.png" alt="Logo da Biblioteca do Caça-Rato">
+    </header>
+
+    <dialog id="fotoModal" class="fotoModal">
+        <h2 id="TituloLivro"></h2>
+        <h3 id="NomeAutor"></h3>
+        <h3 id="AnoPublicacao"></h3>
+        <button type="button" onclick="fecharModal()">
+            Fechar Card
+        </button>
+    </dialog>
+
+    <main class="conteudo">
+
+        <form class="cadastro-forms" id="formCadastro">
+
+            <label for="TituloLivro">Livro</label>
+            <input type="text" placeholder="Título do livro" class="TituloLivro" id="TituloLivro" required>
+
+            <label for="NomeAutor">Autor</label>
+            <input type="text" placeholder="Nome do autor" class="NomeAutor" id="NomeAutor" required>
+
+            <label for="AnoPublicacao">Ano de publicação</label>
+            <input type="number" placeholder="Ex.: 1895" class="AnoPublicacao" id="AnoPublicacao" min="1" max="2100"
+                required>
+
+            <button type="button" onclick="abrirModal()">
+                Fazer Empréstimo
+            </button>
+
+        </form>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
